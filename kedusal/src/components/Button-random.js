@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import './Button-random.css'
+import { randomBytes } from 'crypto';
 
-class Button extends Component {
-    render() {
+const ButtonRandom =({selectStar}) =>{
       return (
+        <div className="ButtonRandom">
             <div className="button-random">
-            
-            <button > J'ai de la force </button>
-            
+            <button onClick={selectStar} > J'ai de la force </button>
             </div>
+        </div>
       );
-    }
-}
+    };
 
 
 
-export default Button 
+
+export default ButtonRandom;
