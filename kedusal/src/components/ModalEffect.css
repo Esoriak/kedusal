@@ -1,0 +1,10 @@
+.modal-wrapper {
+    background-color: black;
+    margin: auto;
+    transition: all .6s;
+    width: 50vw;
+    position: absolute;
+    height: 50vh;
+    z-index: 3;
+    top: 15;
+}
