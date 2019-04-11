@@ -19,7 +19,7 @@
     text-shadow: none;
     display: inline-block;
     text-align: start;
-    margin: 1em;
+    margin: 1.25em;
     font: 400 13.3333px Arial;
     font-family: inherit;
     font-size: inherit;
@@ -37,9 +37,8 @@
 .form-group{
     text-align: center;
 }
-
-.label {
-    text-align: right;
+label {
+    display: inline-block;
     max-width: 100%;
     margin-bottom: 5px;
     font-weight: 700;
