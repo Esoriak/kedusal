@@ -23,7 +23,7 @@ class Formulaire extends Component {
       eyecolorOptions: ["blue", "brown","red","yellow","hazel","gray-blue","orange","green-gold"],
       speciesOptions: ["human","droid","wookies","yoda's species","trandoshan","ewok","sullustan","neimoidian","hutt","twi'lek","vulptereen","toong"],
       affiliationsOptions: ["Alliance to Restore the Republic","Royal House of Naboo","Galactic Empire","Galactic Republic","Imperial Senate","Republic Special Task Force", "Red Squadron","New Republic","Resistance","Jedi Order", "Sith"],
-      skincolorOptions: ["green","light", "green and tan","red (black tattoos)","fair, later pale","brown mottle","dark"],
+      skincolorOptions: ["green","light", "green and tan","red (black tattoos)","fair, later pale","brown mottle"],
     };
  
   

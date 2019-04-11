@@ -34,9 +34,16 @@
     border-image: initial;
 }
 
-label {
-    display: inline-block;
+.form-group{
+    text-align: center;
+}
+
+.label {
+    text-align: right;
     max-width: 100%;
     margin-bottom: 5px;
     font-weight: 700;
 }
+
+
+

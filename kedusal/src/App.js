@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import DisplayApi from './components/DisplayApi';
 import GenerateId from './components/GenerateId';
+import Formulaire from './components/Formulaire';
 
 
 const sampleId = {
@@ -35,8 +36,10 @@ getLove (){
     return (
       <div>
       <DisplayApi charac={this.state.charac} />
-      |<GenerateId selectId ={() => this.getLove()} />
+      <GenerateId selectId ={() => this.getLove()} />
+      <Formulaire/>
       </div>
+      
     )
   }
 }
