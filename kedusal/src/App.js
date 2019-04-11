@@ -1,29 +1,43 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
-import Formulaire from './components/Formulaire';
+import DisplayApi from './components/DisplayApi';
+import GenerateId from './components/GenerateId';
+
+
+const sampleId = {
+  gender: "male",
+  height: 1.5,
+  eyeColor: 'blue',
+  species: "human",
+  affilations: ["Confederacy of Independent Systems ", "Separatist Droid Army"],
+  skinColor: "black",
+  name: 'kedusal'
+
+
+}
 
 class App extends Component {
-  render() {
+  state ={
+    charac: sampleId
+  }
+
+getLove (){
+  fetch("https://melroune.github.io/starwars-api/api")
+  .then( response => response.json())
+  .then(data => {this.setState({
+    result:data[0]
+  })
+
+  })
+}
+ render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-        <Formulaire />
+      <div>
+      <DisplayApi charac={this.state.charac} />
+      |<GenerateId selectId ={() => this.getLove()} />
       </div>
-    );
+    )
   }
 }
 
