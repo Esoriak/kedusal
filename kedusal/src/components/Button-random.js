@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import './Button-random.css'
 
 class Button extends Component {
     render() {
       return (
             <div className="button-random">
             
-            <button onClick={} > J'ai de la force </button>
+            <button > J'ai de la force </button>
             
             </div>
       );
