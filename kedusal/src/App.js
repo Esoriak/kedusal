@@ -14,28 +14,26 @@ const sampleId = {
   skinColor: "black",
   name: 'kedusal'
 
-
 }
 
 class App extends Component {
-  state ={
+  state = {
     charac: sampleId
   }
 
-getLove (){
-  fetch("https://melroune.github.io/starwars-api/api")
-  .then( response => response.json())
-  .then(data => {this.setState({
-    result:data[0]
-  })
-
-  })
-}
- render() {
+  getLove() {
+    const proxis = "https://cors-anywhere.herokuapp.com/"
+    fetch(proxis + "https://melroune.github.io/starwars-api/api/all.json")
+      .then(response => response.json())
+      .then(data => {
+        this.setState({charac: data[0]})
+      })
+  }
+  render() {
     return (
       <div>
-      <DisplayApi charac={this.state.charac} />
-      |<GenerateId selectId ={() => this.getLove()} />
+        <DisplayApi charac={this.state.charac} />
+        <GenerateId selectId={() => this.getLove()} />
       </div>
     )
   }
