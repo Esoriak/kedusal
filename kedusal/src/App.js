@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import DisplayApi from './components/DisplayApi';
 import GenerateId from './components/GenerateId';
+import Modal from './components/Modal';
 
 
 const sampleId = {
@@ -36,6 +37,7 @@ getLove (){
       <div>
       <DisplayApi charac={this.state.charac} />
       |<GenerateId selectId ={() => this.getLove()} />
+      <Modal/>
       </div>
     )
   }

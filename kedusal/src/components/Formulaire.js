@@ -5,6 +5,7 @@ import React, { Component } from "react";
 import Select from "../components/Select";
 import Input from "../components/Input";
 import Button from "../components/ButtonFormulaire";
+import './Form.css';
 
 class Formulaire extends Component {
   constructor(props) {
@@ -34,13 +35,13 @@ class Formulaire extends Component {
 
   render() {
     return (
-      <form className="container-fluid" onSubmit={this.handleFormSubmit}>
+      
+      <form className="container" onSubmit={this.handleFormSubmit}>
 
         <Select
           title={"Gender"}
           name={"gender"}
           options={this.state.genderOptions}
-          value={this.state.newUser.gender}
           placeholder={"Select Gender"}
           handleChange={this.handleInput}
         />{" "}
@@ -58,7 +59,6 @@ class Formulaire extends Component {
           title={"Species"}
           name={"species"}
           options={this.state.speciesOptions}
-          value={this.state.newUser.species}
           placeholder={"Select Species"}
           handleChange={this.handleInput}
         />{" "}   
@@ -67,7 +67,6 @@ class Formulaire extends Component {
           title={"Affiliations"}
           name={"affiliations"}
           options={this.state.affiliationsOptions}
-          value={this.state.newUser.affiliations}
           placeholder={"Select Affiliations"}
           handleChange={this.handleInput}
         />{" "}  
@@ -76,7 +75,6 @@ class Formulaire extends Component {
           title={"Skin Color"}
           name={"skinColor"}
           options={this.state.skincolorOptions}
-          value={this.state.newUser.skinColor}
           placeholder={"Select Skin Color"}
           handleChange={this.handleInput}
         />{" "}  
@@ -91,6 +89,7 @@ class Formulaire extends Component {
         {/*Submit */}
 
       </form>
+     
     );
   }
 }
@@ -101,6 +100,7 @@ const buttonStyle = {
   height:"50px",
   color: "white",
   background: "rgb(66, 184, 221)",
+
 };
 
 export default Formulaire;
