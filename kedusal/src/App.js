@@ -3,11 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import DisplayApi from './components/DisplayApi';
 import GenerateId from './components/GenerateId';
-<<<<<<< HEAD
-import Formulaire from './components/Formulaire';
-=======
 import Modal from './components/Modal';
->>>>>>> a27667b7469bd271f0276f5188e8b73abde9d79c
 
 
 const sampleId = {
