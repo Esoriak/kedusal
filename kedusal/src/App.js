@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import './App.css';
 import DisplayApi from './components/DisplayApi';
 import GenerateId from './components/GenerateId';
+import Footer from './components/Bann-foot';
+import Navbar from './components/navbar';
 
 
 const sampleId = {
@@ -31,11 +33,25 @@ getLove (){
 
   })
 }
- render() {
+ 
+render() {
     return (
       <div>
+      <header>
+      <Navbar/>
+      </header>
       <DisplayApi charac={this.state.charac} />
       |<GenerateId selectId ={() => this.getLove()} />
+
+
+
+<body>
+
+</body>
+
+<footer>
+        <Footer />
+</footer>
       </div>
     )
   }
