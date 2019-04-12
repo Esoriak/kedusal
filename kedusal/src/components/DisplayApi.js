@@ -21,9 +21,9 @@ const DisplayApi = ({charac}) => {
 
                  <li> species : {charac.species}</li>
 
-                <li>affiliations : {charac.affilations}</li>
-
                  <li>skinColor : {charac.skinColor} </li>
+
+                 <li>photo :<img src= {charac.image}/></li>
                
             </ul>
         </div>

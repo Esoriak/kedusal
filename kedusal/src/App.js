@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 
 import './App.css';
-import DisplayApi from './components/DisplayApi';
-import GenerateId from './components/GenerateId';
-import Modal from './components/Modal';
+import GenerateCharacter from './components/GenerateCharacter';
+import DisplayCharacter from './components/DisplayCharacter';
+import Formulaire from './components/Formulaire';
+
 
 
 const sampleId = {
@@ -11,33 +12,43 @@ const sampleId = {
   height: 1.5,
   eyeColor: 'blue',
   species: "human",
-  affilations: ["Confederacy of Independent Systems ", "Separatist Droid Army"],
   skinColor: "black",
-  name: 'kedusal'
-
+  name: 'kedusal',
+  image:"https://thewelltraveledjedi.com/wp-content/uploads/2017/08/Welcome-Young-Jedi.png"
 
 }
 
 class App extends Component {
-  state ={
-    charac: sampleId
+  state = {
+    charac: sampleId,
+    userChoice: ''
   }
 
-getLove (){
-  fetch("https://melroune.github.io/starwars-api/api")
-  .then( response => response.json())
-  .then(data => {this.setState({
-    result:data[0]
-  })
+  getLovpoulet() {
+    const proxis = "https://cors-anywhere.herokuapp.com/"
+    fetch(proxis + "https://melroune.github.io/starwars-api/api/all.json")
+      .then(response => response.json())
+      .then(data => {
+         const random = Math.floor(Math.random() * data.length)
+        this.setState({charac :data[random]})
+      })
+  }
 
-  })
-}
- render() {
+  handleUserChoice = choice => {
+    this.setState({
+      userChoice: choice
+    })
+  }
+
+  
+
+  render() {
     return (
       <div>
-      <DisplayApi charac={this.state.charac} />
-      |<GenerateId selectId ={() => this.getLove()} />
-      <Modal/>
+        <Formulaire/>
+        <DisplayCharacter charac={this.state.charac}/>
+        <GenerateCharacter selectCharacter={() =>this.getLovpoulet()}/>
+      
       </div>
       
     )

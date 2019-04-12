@@ -29,6 +29,14 @@ class Formulaire extends Component {
   
   }
 
+  getConsole = () => {
+    console.log(this.state)
+  }
+
+  componentDidMount () {
+    this.getConsole()
+  }
+
   /* This lifecycle hook gets executed when the component mounts */
 
 
