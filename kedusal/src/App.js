@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 
 import './App.css';
-import DisplayApi from './components/DisplayApi';
-import GenerateId from './components/GenerateId';
-import Modal from './components/Modal';
+import GenerateCharacter from './components/GenerateCharacter';
+import DisplayCharacter from './components/DisplayCharacter';
+import Formulaire from './components/Formulaire';
+
 
 
 const sampleId = {
@@ -13,7 +14,7 @@ const sampleId = {
   species: "human",
   skinColor: "black",
   name: 'kedusal',
-  image:""
+  image:"https://thewelltraveledjedi.com/wp-content/uploads/2017/08/Welcome-Young-Jedi.png"
 
 }
 
@@ -39,34 +40,15 @@ class App extends Component {
     })
   }
 
-  handleMyChoice = () => {
-    if (this.state.userChoice === 'poulet') {
-      return (
-        < h1 > Moi j'aime le poulet </h1>
-      )
-    } else if (this.state.userChoice === 'yolo') {
-      return ( <h1 > Moi je suis yolo </h1>
-      )
-    } else return ( <h1> Trou Noir </h1>
-    )
-  }
+  
 
   render() {
     return (
       <div>
-        <DisplayApi charac={this.state.charac} />
-        <GenerateId selectId={() => this.getLove()} />
-         < button onClick = {
-           () => this.handleUserChoice('poulet')
-         } > poulet </button>
-         < button onClick = {
-           () => this.handleUserChoice('yolo')
-         } > yolo </button>
-
-         {this.handleMyChoice()}
-
-
-      <Modal />
+        <Formulaire/>
+        <DisplayCharacter charac={this.state.charac}/>
+        <GenerateCharacter selectCharacter={() =>this.getLovpoulet()}/>
+      
       </div>
       
     )
