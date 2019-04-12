@@ -3,7 +3,7 @@ import React, { Component } from "react";
 /* Import Components */
 
 import Select from "../components/Select";
-import Input from "../components/Input";
+// import Input from "../components/Input";
 import Button from "../components/ButtonFormulaire";
 
 class Formulaire extends Component {
