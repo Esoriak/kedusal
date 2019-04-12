@@ -56,7 +56,7 @@ class App extends Component {
       <div className="container">
         <section className="intro" ref={this.intro}>
           <p>
-            A long time ago, in a galaxy far,<br /> far away....
+            Dans une galaxie lointaine, <br /> quelqu'un vous attend....
           </p>
         </section>
         <section className="logo" ref={this.logo}>
@@ -64,22 +64,21 @@ class App extends Component {
         </section>
         <section className="crawl">
           <div className="content" ref={this.content}>
-            <h1 className="title">Episode 7</h1>
-            <h2 className="subtitle">THE APP AWAKENS</h2>
-            <p>
-              The Development Team Lead has vanished. In her absence, the
-              sinister FUNCTIONAL BUG has risen from the ashes of the CI Tool
-              and will not rest until the last developer has been destroyed.
+            <h1 className="title">KEDUSAL </h1>
+            <h2 className="subtitle">Vous avez attrapé un match, la periode d'incubation est de 3 jours...</h2>
+            <p className="">
+              L'humain que vous êtes à de toute évidence de nombreuses qualités mais jamais sur Terre vous n'avez trouvez votre égal.
+              Cela arrive parfois quand la force en vous est trop forte, trop éclatante. Ou à l'opposé si elle est trop faible ou camouflé par un défaut monstrueux
+              qui effraie vos congénères ( au hasard une calvitie ou un trop gros doigt de pied).
             </p>
             <p>
-              With the support of the QA TEAM, the Software Developer leads a
-              brave RESISTANCE. He is desperate to find his Lead and gain her
-              help in restoring peace and justice to the repository.
+              Quoi qu'il en soit rassurez vous, la galaxie est grande. Kedusal vous promet un amour galactique fonctionnel. Nous avons trouvez plusieurs profils
+              qui vous correspondraient. Evidemment il faudra occulter quelques particularités spécifiques à l'espèce de votre match pour établir le premier contact.
             </p>
             <p>
-              The Developer has sent his most daring editor theme on a secret
-              mission to the production branch, where an old ally has discovered
-              a clue to the Lead’s whereabouts....
+             Une fois la première passée nous ne doutons pas un seul instant de vous : sachez acceptez la peau luisante
+             du gloubiboulgi et il vous le rendra au centuple. Apprenez à caresser le contour des oreilles en trompette et titiller la force !
+             L'amour inter espèce, c'est le TURFU. Faites parti de l'aventure,  faites confiance à Kedusal, envoyez un mail à vos match.
             </p>
           </div>
         </section>
