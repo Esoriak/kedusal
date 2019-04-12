@@ -15,7 +15,7 @@ class Formulaire extends Component {
       newUser: {
         gender: "",
         eyeColor:"",
-        species:"",
+        species: "",
         affiliations:"",
         skinColor:"",
       },
@@ -37,8 +37,8 @@ class Formulaire extends Component {
     return (
       
       <form className="container" onSubmit={this.handleFormSubmit}>
-
-        <Select
+        
+        <Select 
           title={"Gender"}
           name={"gender"}
           options={this.state.genderOptions}
