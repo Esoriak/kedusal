@@ -65,18 +65,18 @@ class App extends Component {
         <section className="crawl">
           <div className="content" ref={this.content}>
             <h1 className="title">KEDUSAL </h1>
-            <h2 className="subtitle">Vous avez attrapé un match, la periode d'incubation est de 3 jours...</h2>
+            <h2 className="subtitle">Vous avez attrapé un match, la période d'incubation est de 3 jours...</h2>
             <p className="">
-              L'humain que vous êtes à de toute évidence de nombreuses qualités mais jamais sur Terre vous n'avez trouvez votre égal.
-              Cela arrive parfois quand la force en vous est trop forte, trop éclatante. Ou à l'opposé si elle est trop faible ou camouflé par un défaut monstrueux
+              L'humain que vous êtes a de toute évidence de nombreuses qualités mais jamais sur Terre vous n'avez pas trouvé votre égal.
+              Cela arrive parfois, quand la force en vous est trop forte, trop éclatante ou à l'opposé, si elle est trop faible ou camouflé par un défaut monstrueux
               qui effraie vos congénères ( au hasard une calvitie ou un trop gros doigt de pied).
             </p>
             <p>
-              Quoi qu'il en soit rassurez vous, la galaxie est grande. Kedusal vous promet un amour galactique fonctionnel. Nous avons trouvez plusieurs profils
-              qui vous correspondraient. Evidemment il faudra occulter quelques particularités spécifiques à l'espèce de votre match pour établir le premier contact.
+              Quoi qu'il en soit rassurez vous, la galaxie est grande. Kedusal vous promet un amour galactique fonctionnel. Nous avons trouvé plusieurs profils
+              qui vous correspondent. Evidemment, il faudra occulter quelques particularités spécifiques à l'espèce de votre match pour établir le premier contact.
             </p>
             <p>
-             Une fois la première passée nous ne doutons pas un seul instant de vous : sachez acceptez la peau luisante
+             Une fois la première passée, nous ne doutons pas un seul instant de vous : sachez accepter la peau luisante
              du gloubiboulgi et il vous le rendra au centuple. Apprenez à caresser le contour des oreilles en trompette et titiller la force !
              L'amour inter espèce, c'est le TURFU. Faites parti de l'aventure,  faites confiance à Kedusal, envoyez un mail à vos match.
             </p>
@@ -89,8 +89,7 @@ class App extends Component {
           />
         </audio>
         <button className="volume" type="button" onClick={this.onVolumeClick}>
-          {/* Icons created by Agarunov Oktay-Abraham from the Noun Project */}
-          {/* https://thenounproject.com/agarunov/ */}
+         
           {this.state.muted ? (
             <img src={volumeOff} alt="Volume is off" />
           ) : (
