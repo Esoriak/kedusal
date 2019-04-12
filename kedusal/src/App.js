@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import DisplayApi from './components/DisplayApi';
 import GenerateId from './components/GenerateId';
+import Modal from './components/Modal';
 
 
 const sampleId = {
@@ -64,7 +65,10 @@ class App extends Component {
 
          {this.handleMyChoice()}
 
+
+      <Modal />
       </div>
+      
     )
   }
 }
