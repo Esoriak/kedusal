@@ -1,4 +1,5 @@
 import React from "react";
+import './ButtonFormulaire.css';
 
 const ButtonFormulaire = props => {
   console.log(props.style);
@@ -9,6 +10,7 @@ const ButtonFormulaire = props => {
         props.type == "primary" ? "btn btn-primary" : "btn btn-secondary"
       }
       onClick={props.action}
+      className="ButtonFormulaire"
     >
       {props.title}
     </button>

@@ -93,15 +93,12 @@ class Formulaire extends Component {
     );
   }
 }
-
 const buttonStyle = {
-  margin: "40px 40px 40px 40px",
-  width:"150px",
-  height:"50px",
-  color: "white",
+  margin: "10px 10px 10px 10px",
   background: "rgb(66, 184, 221)",
-
-
+  color:"white",
+  height:"50px",
+  width:"120px",
 };
 
 export default Formulaire;
